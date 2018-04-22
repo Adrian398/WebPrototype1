@@ -1,6 +1,7 @@
 ﻿namespace WebPrototype1.Models
 {
     using System;
+    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Linq;
 
@@ -20,6 +21,7 @@
         public int ProviderId { get; set; }
         public string Name { get; set; }
         public string HomepageURL { get; set; }
-
+        public virtual ICollection<Contract> Contracts { get; set; }
+        public virtual ICollection<Offering> Offerings { get; set; }
     }
 }

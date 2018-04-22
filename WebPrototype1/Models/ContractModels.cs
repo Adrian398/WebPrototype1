@@ -1,6 +1,7 @@
 ﻿namespace WebPrototype1.Models
 {
     using System;
+    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Linq;
 
@@ -11,19 +12,15 @@
         {
         }
         public virtual DbSet<Contract> Contracts { get; set; }
-        public virtual DbSet<Mobilfunk> Mobilfunks { get; set; }
     }
 
     public class Contract
     {   
         public int ContractId { get; set; }
+        public double Price { get; set; }
         public string Name { get; set; }
+        public int ProviderId { get; set; }
         public virtual Provider Provider { get; set; }
-
-    }
-
-    public class Mobilfunk
-    {
         public int MobilfunkId { get; set; }
         public double DataVolume { get; set; }
         public int FreeMinutes { get; set; }
@@ -35,7 +32,7 @@
         public string RunningTime { get; set; }
         public bool YoungPeople { get; set; }
         public bool SustainYourNumber { get; set; }
-
-        public virtual Contract Contract { get; set; }
+        public int MobilePhoneId { get; set; }
+        public virtual MobilePhone MobilePhone{ get; set; }
     }
 }
