@@ -202,8 +202,12 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MobilePhoneModels.cs" />
+    <Compile Include="Models\MobilePhoneProviderModels.cs" />
+    <Compile Include="Models\MobilfunkModels.cs" />
     <Compile Include="Models\OfferingModels.cs" />
+    <Compile Include="Models\PricingModels.cs" />
     <Compile Include="Models\ProviderModels.cs" />
+    <Compile Include="Models\UserModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>

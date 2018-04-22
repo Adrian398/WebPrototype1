@@ -21,10 +21,11 @@
         public int MobilePhoneId { get; set; }
         public string Name { get; set; }
         public string URL { get; set; }
-        public int ContractId { get; set; }
-        public virtual Contract Contract { get; set; }
-        
+
+        public int MobilePhoneProviderId { get; set; }
+        public MobilePhoneProvider MobilePhoneProvider { get; set; }
+
 
     }
-    
+
 }
