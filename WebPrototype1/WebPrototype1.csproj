@@ -192,8 +192,17 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ContractsController.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MobilePhoneProvidersController.cs" />
+    <Compile Include="Controllers\MobilePhonesController.cs" />
+    <Compile Include="Controllers\MobilfunksController.cs" />
+    <Compile Include="Controllers\OfferingsController.cs" />
+    <Compile Include="Controllers\PricingsController.cs" />
+    <Compile Include="Controllers\ProvidersController.cs" />
+    <Compile Include="Controllers\RatingsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -207,7 +216,8 @@
     <Compile Include="Models\OfferingModels.cs" />
     <Compile Include="Models\PricingModels.cs" />
     <Compile Include="Models\ProviderModels.cs" />
-    <Compile Include="Models\UserModels.cs" />
+    <Compile Include="Models\RatingModels.cs" />
+    <Compile Include="Models\CustomerModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -268,6 +278,51 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Contracts\Create.cshtml" />
+    <Content Include="Views\Contracts\Delete.cshtml" />
+    <Content Include="Views\Contracts\Details.cshtml" />
+    <Content Include="Views\Contracts\Edit.cshtml" />
+    <Content Include="Views\Contracts\Index.cshtml" />
+    <Content Include="Views\Customers\Create.cshtml" />
+    <Content Include="Views\Customers\Delete.cshtml" />
+    <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Customers\Edit.cshtml" />
+    <Content Include="Views\Customers\Index.cshtml" />
+    <Content Include="Views\MobilePhones\Create.cshtml" />
+    <Content Include="Views\MobilePhones\Delete.cshtml" />
+    <Content Include="Views\MobilePhones\Details.cshtml" />
+    <Content Include="Views\MobilePhones\Edit.cshtml" />
+    <Content Include="Views\MobilePhones\Index.cshtml" />
+    <Content Include="Views\MobilePhoneProviders\Create.cshtml" />
+    <Content Include="Views\MobilePhoneProviders\Delete.cshtml" />
+    <Content Include="Views\MobilePhoneProviders\Details.cshtml" />
+    <Content Include="Views\MobilePhoneProviders\Edit.cshtml" />
+    <Content Include="Views\MobilePhoneProviders\Index.cshtml" />
+    <Content Include="Views\Mobilfunks\Create.cshtml" />
+    <Content Include="Views\Mobilfunks\Delete.cshtml" />
+    <Content Include="Views\Mobilfunks\Details.cshtml" />
+    <Content Include="Views\Mobilfunks\Edit.cshtml" />
+    <Content Include="Views\Mobilfunks\Index.cshtml" />
+    <Content Include="Views\Offerings\Create.cshtml" />
+    <Content Include="Views\Offerings\Delete.cshtml" />
+    <Content Include="Views\Offerings\Details.cshtml" />
+    <Content Include="Views\Offerings\Edit.cshtml" />
+    <Content Include="Views\Offerings\Index.cshtml" />
+    <Content Include="Views\Pricings\Create.cshtml" />
+    <Content Include="Views\Pricings\Delete.cshtml" />
+    <Content Include="Views\Pricings\Details.cshtml" />
+    <Content Include="Views\Pricings\Edit.cshtml" />
+    <Content Include="Views\Pricings\Index.cshtml" />
+    <Content Include="Views\Providers\Create.cshtml" />
+    <Content Include="Views\Providers\Delete.cshtml" />
+    <Content Include="Views\Providers\Details.cshtml" />
+    <Content Include="Views\Providers\Edit.cshtml" />
+    <Content Include="Views\Providers\Index.cshtml" />
+    <Content Include="Views\Ratings\Create.cshtml" />
+    <Content Include="Views\Ratings\Delete.cshtml" />
+    <Content Include="Views\Ratings\Details.cshtml" />
+    <Content Include="Views\Ratings\Edit.cshtml" />
+    <Content Include="Views\Ratings\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -299,7 +354,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>6248</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

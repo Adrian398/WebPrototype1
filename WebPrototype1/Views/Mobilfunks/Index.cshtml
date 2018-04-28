@@ -1,0 +1,87 @@
+﻿@model IEnumerable<WebPrototype1.Models.Mobilfunk>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Contract.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataVolume)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FreeMinutes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FreeSMS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EURoaming)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NetworkSpeed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NetworkThrottling)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Network)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RunningTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SustainYourNumber)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Contract.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataVolume)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FreeMinutes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FreeSMS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EURoaming)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NetworkSpeed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NetworkThrottling)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Network)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RunningTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SustainYourNumber)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MobilfunkId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MobilfunkId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MobilfunkId })
+        </td>
+    </tr>
+}
+
+</table>

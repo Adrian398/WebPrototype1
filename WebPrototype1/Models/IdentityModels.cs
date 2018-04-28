@@ -29,5 +29,23 @@ namespace WebPrototype1.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<WebPrototype1.Models.Contract> Contracts { get; set; }
+
+        public System.Data.Entity.DbSet<WebPrototype1.Models.Provider> Providers { get; set; }
+
+        public System.Data.Entity.DbSet<WebPrototype1.Models.Customer> Customers { get; set; }
+
+        public System.Data.Entity.DbSet<WebPrototype1.Models.MobilePhone> MobilePhones { get; set; }
+
+        public System.Data.Entity.DbSet<WebPrototype1.Models.MobilePhoneProvider> MobilePhoneProviders { get; set; }
+
+        public System.Data.Entity.DbSet<WebPrototype1.Models.Mobilfunk> Mobilfunks { get; set; }
+
+        public System.Data.Entity.DbSet<WebPrototype1.Models.Offering> Offerings { get; set; }
+
+        public System.Data.Entity.DbSet<WebPrototype1.Models.Pricing> Pricings { get; set; }
+
+        public System.Data.Entity.DbSet<WebPrototype1.Models.Rating> Ratings { get; set; }
     }
 }
